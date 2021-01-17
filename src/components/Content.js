@@ -12,7 +12,7 @@ class Content extends React.Component{
     }
 
     componentDidMount(){
-        const API_URL = "https://swapi.co/api/people"
+        const API_URL = "https://swapi.dev/api/people"
         this.setState({
           loading : true
         })
