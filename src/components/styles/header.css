@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+.Header{
+    width:100%;
+    height: 10vh;
+    background-color: #016a9b;
+    box-shadow: 0 0 15px black;
+    display:flex;
+    justify-content: space-between;
+    padding:0px 30px 0px 30px; 
+}
+.Header>h1{
+    font-size: 27px;
+    color:whitesmoke;
+    font-family: 'Arvo', serif;
+    font-style: italic;
+    margin-top: 13px;
+    text-shadow:  black 0px 3px 3px;
+}
+.Header div{
+    background-image: url(../images/star-wars-logo-3.png);
+    width:10%;
+    height: 65px;
+    background-size: cover;
+    box-shadow: 0 0 15px black;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .Header div{
+        width:25%;
+        height: 65px;
+    }
+    .Header>h1{
+        font-size: 18px;
+    }
+    
+  }
