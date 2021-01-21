@@ -5,6 +5,11 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Detail from './components/Detail';
 
+let pathString = window.location.href;
+
+if(pathString.split(":")[0] === "https"){
+    window.location.assign(window.location.href.replace("https", "http"));
+}
 
 class App extends Component {
   render() {
